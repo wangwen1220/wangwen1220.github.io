@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>前端开发经验总结－HTTP 常见状态码 | Steven&#39;s Devlog</title>
+  <meta name="author" content="Steven">
+  
+  <meta name="description" content="学习总结 思考感悟 技术分享 记录人生">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="前端开发经验总结－HTTP 常见状态码"/>
+  <meta property="og:site_name" content="Steven&#39;s Devlog"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.png" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="Steven&#39;s Devlog" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">Steven&#39;s Devlog</a></h1>
+  <h2><a href="/"></a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-04-18T02:43:11.390Z"><a href="/2015/04/18/前端开发经验总结－HTTP 常见状态码/">2015-04-18</a></time>
+      
+      
+  
+    <h1 class="title">前端开发经验总结－HTTP 常见状态码</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>前端开发经验总结系列之 HTTP 常见状态码</p>
+<ul>
+<li>1xx: 信息</li>
+<li>2xx: 成功<ul>
+<li>200 OK 请求成功</li>
+<li>204    No Content 没有内容（没有response body，浏览器应该继续显示原来的文档）</li>
+<li>205 Reset Content    没有新文档（但浏览器应该重置它所显示的内容，用来强制浏览器清除表单输入内容）</li>
+</ul>
+</li>
+<li>3xx: 重定向<ul>
+<li>301 Moved Permanently 重定向（所请求的页面已经转移至新的url）</li>
+<li>302 Found 临时重定向（所请求的页面已经临时转移至新的url）</li>
+<li>304 Not Modified 文档未修改（客户的缓存资源是最新的， 要客户端使用缓存）</li>
+<li>307 Temporary Redirect 临时重定向（所请求的页面已经临时转移至新的url）</li>
+</ul>
+</li>
+<li>4xx: 客户端错误<ul>
+<li>400 Bad Request 坏请求（发送的Request中的数据有错误）</li>
+<li>403 Forbidden    请求被服务器拒绝了</li>
+<li>404 Not Found    未找到资源（服务器无法找到被请求的页面）</li>
+</ul>
+</li>
+<li>5xx: 服务器错误<ul>
+<li>500    Internal Server Error 内部服务器错误（服务器遇到一个错误，使其无法为请求提供服务）</li>
+<li>501 Internal Server Error 未实现（客户端发起的请求超出服务器的能力范围）</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+  
+  <div class="tags">
+    <a href="/tags/HTTP-常见状态码/">HTTP 常见状态码</a>
+  </div>
+
+        
+  <div class="addthis addthis_toolbox addthis_default_style">
+    
+      <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+    
+    
+      <a class="addthis_button_tweet"></a>
+    
+    
+      <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+    
+    
+      <a class="addthis_button_pinterest_pinit" pi:pinit:layout="horizontal"></a>
+    
+    <a class="addthis_counter addthis_pill_style"></a>
+  </div>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js"></script>
+
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+<section id="comment">
+  <h1 class="title">留言</h1>
+
+  
+      <div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=wangwen1220";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="fb-comments" data-href="http://blog.wenwang.org/2015/04/18/前端开发经验总结－HTTP 常见状态码/index.html" data-num-posts="5" data-width="840" data-colorscheme="light"></div>
+      
+  
+</section>
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="q" value="site:blog.wenwang.org">
+  </form>
+</div>
+
+  
+
+  
+<div class="widget tag">
+  <h3 class="title">标签</h3>
+  <ul class="entry">
+  
+    <li><a href="/tags/HTTP-常见状态码/">HTTP 常见状态码</a><small>1</small></li>
+  
+    <li><a href="/tags/写样式的最佳实践/">写样式的最佳实践</a><small>1</small></li>
+  
+    <li><a href="/tags/前端开发经验总结-JavaScript-对象继承形式/">前端开发经验总结, JavaScript 对象继承形式</a><small>1</small></li>
+  
+    <li><a href="/tags/网站性能优化/">网站性能优化</a><small>1</small></li>
+  
+  </ul>
+</div>
+
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2015 Steven
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>

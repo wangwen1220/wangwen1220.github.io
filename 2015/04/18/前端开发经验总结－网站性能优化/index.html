@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>前端开发经验总结－网站性能优化 | Steven&#39;s Devlog</title>
+  <meta name="author" content="Steven">
+  
+  <meta name="description" content="学习总结 思考感悟 技术分享 记录人生">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="前端开发经验总结－网站性能优化"/>
+  <meta property="og:site_name" content="Steven&#39;s Devlog"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.png" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="Steven&#39;s Devlog" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">Steven&#39;s Devlog</a></h1>
+  <h2><a href="/"></a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-04-18T02:43:05.765Z"><a href="/2015/04/18/前端开发经验总结－网站性能优化/">2015-04-18</a></time>
+      
+      
+  
+    <h1 class="title">前端开发经验总结－网站性能优化</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>前端开发经验总结系列之网站性能优化</p>
+<ol>
+<li>减少HTTP请求次数</li>
+</ol>
+<p>合并图片、CSS、JS，改进首次访问用户等待时间。</p>
+<ol>
+<li><p>把CSS放到顶部</p>
+</li>
+<li><p>把JS放到底部</p>
+</li>
+</ol>
+<p>防止js加载对之后资源造成阻塞。</p>
+<ol>
+<li><p>避免使用CSS表达式</p>
+</li>
+<li><p>将CSS和JS放到外部文件中</p>
+</li>
+</ol>
+<p>目的是缓存，但有时候为了减少请求，也会直接写到页面里，需根据PV和IP的比例权衡。</p>
+<ol>
+<li><p>精简CSS和JS</p>
+</li>
+<li><p>删除重复的JS和CSS</p>
+</li>
+</ol>
+<p>重复调用脚本，除了增加额外的HTTP请求外，多次运算也会浪费时间。在IE和Firefox中不管脚本是否可缓存，它们都存在重复运算JavaScript的问题。</p>
+<ol>
+<li>可缓存的AJAX</li>
+</ol>
+<p>“异步”并不意味着“即时”：Ajax并不能保证用户不会在等待异步的JavaScript和XML响应上花费时间。</p>
+<ol>
+<li>使用GET来完成AJAX请求</li>
+</ol>
+<p>当使用XMLHttpRequest时，浏览器中的POST方法是一个“两步走”的过程：首先发送文件头，然后才发送数据。因此使用GET获取数据时更加有意义。</p>
+<ol>
+<li>减少DOM元素数量</li>
+</ol>
+<p>是否存在一个是更贴切的标签可以使用？人生不仅仅是DIV+CSS</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+  
+  <div class="tags">
+    <a href="/tags/网站性能优化/">网站性能优化</a>
+  </div>
+
+        
+  <div class="addthis addthis_toolbox addthis_default_style">
+    
+      <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+    
+    
+      <a class="addthis_button_tweet"></a>
+    
+    
+      <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+    
+    
+      <a class="addthis_button_pinterest_pinit" pi:pinit:layout="horizontal"></a>
+    
+    <a class="addthis_counter addthis_pill_style"></a>
+  </div>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js"></script>
+
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+<section id="comment">
+  <h1 class="title">留言</h1>
+
+  
+      <div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=wangwen1220";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="fb-comments" data-href="http://blog.wenwang.org/2015/04/18/前端开发经验总结－网站性能优化/index.html" data-num-posts="5" data-width="840" data-colorscheme="light"></div>
+      
+  
+</section>
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="q" value="site:blog.wenwang.org">
+  </form>
+</div>
+
+  
+
+  
+<div class="widget tag">
+  <h3 class="title">标签</h3>
+  <ul class="entry">
+  
+    <li><a href="/tags/HTTP-常见状态码/">HTTP 常见状态码</a><small>1</small></li>
+  
+    <li><a href="/tags/写样式的最佳实践/">写样式的最佳实践</a><small>1</small></li>
+  
+    <li><a href="/tags/前端开发经验总结-JavaScript-对象继承形式/">前端开发经验总结, JavaScript 对象继承形式</a><small>1</small></li>
+  
+    <li><a href="/tags/网站性能优化/">网站性能优化</a><small>1</small></li>
+  
+  </ul>
+</div>
+
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2015 Steven
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>
