@@ -51,11 +51,150 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2015-04-18T02:43:55.984Z"><a href="/2015/04/18/前端开发经验总结－Javascript 继承两种形式/">2015-04-18</a></time>
+        <time datetime="2015-04-20T09:35:53.656Z"><a href="/2015/04/20/网站性能优化/">2015-04-20</a></time>
       
       
   
-    <h1 class="title"><a href="/2015/04/18/前端开发经验总结－Javascript 继承两种形式/">前端开发经验总结－JavaScript 对象继承形式</a></h1>
+    <h1 class="title"><a href="/2015/04/20/网站性能优化/">前端开发经验总结－网站性能优化</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>前端开发经验总结系列之网站性能优化</p>
+<h3 id="减少HTTP请求次数">减少HTTP请求次数</h3><p>合并图片、CSS、JS，改进首次访问用户等待时间。</p>
+<h3 id="把CSS放到顶部">把CSS放到顶部</h3><h3 id="把JS放到底部">把JS放到底部</h3><h3 id="避免使用CSS表达式">避免使用CSS表达式</h3><h3 id="将CSS和JS放到外部文件中">将CSS和JS放到外部文件中</h3><p>目的是缓存，但有时候为了减少请求，也会直接写到页面里，需根据PV和IP的比例权衡。</p>
+<h3 id="精简CSS和JS">精简CSS和JS</h3><h3 id="删除重复的JS和CSS">删除重复的JS和CSS</h3><p>重复调用脚本，除了增加额外的HTTP请求外，多次运算也会浪费时间。在IE和Firefox中不管脚本是否可缓存，它们都存在重复运算JavaScript的问题。</p>
+<h3 id="可缓存的AJAX">可缓存的AJAX</h3><p>“异步”并不意味着“即时”：Ajax并不能保证用户不会在等待异步的JavaScript和XML响应上花费时间。</p>
+<h3 id="使用GET来完成AJAX请求">使用GET来完成AJAX请求</h3><p>当使用XMLHttpRequest时，浏览器中的POST方法是一个“两步走”的过程：首先发送文件头，然后才发送数据。因此使用GET获取数据时更加有意义。</p>
+<h3 id="减少DOM元素数量">减少DOM元素数量</h3><p>是否存在一个是更贴切的标签可以使用？人生不仅仅是DIV+CSS</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-04-20T09:11:46.484Z"><a href="/2015/04/20/如何写好技术简历/">2015-04-20</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2015/04/20/如何写好技术简历/">简历之道－如何写好技术简历</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>写好技术简历，应该遵循哪些原则</p>
+<h3 id="前言">前言</h3><p>有太多程序员可能因为不知道如何表达自己，而埋没了自己的才华，拿着原本可以拿到的一半的薪资，在一家默默无闻的公司里加班到深夜。</p>
+<p>明明手握着最新技术的程序员们，不应该在写简历这件事上留下遗憾。我在写简历的过程中寻找和总结了一些经验，和大家分享一下：</p>
+<h3 id="版式">版式</h3><ul>
+<li>使用对齐</li>
+<li>不必使用居中</li>
+<li>谨慎使用粗体</li>
+<li>避免不必要的折行</li>
+<li>使用制表符辅助对齐</li>
+</ul>
+<h3 id="个人信息">个人信息</h3><ul>
+<li>不要使用不必要的条目名称</li>
+<li>使用分隔符增强电话号码的可读性</li>
+<li>使用可以点击的链接</li>
+<li>不要使用照片</li>
+<li>不要写无关个人信息</li>
+<li>使用客观事实而非主观描述</li>
+<li>考虑提供他人的评价</li>
+<li>不必写求职目标</li>
+</ul>
+<h3 id="技术能力">技术能力</h3><ul>
+<li>不要堆砌技术名词</li>
+<li>对技术进行分类</li>
+<li>使用正确的技术名称</li>
+<li>不要写电脑能力</li>
+<li>按照熟悉程度对技术能力进行排序</li>
+<li>不要写过于特定的技术</li>
+<li>谨慎使用精通</li>
+<li>使用项目经验印证技术能力</li>
+</ul>
+<h3 id="项目经历">项目经历</h3><ul>
+<li>按照时间对项目经历排序</li>
+<li>不要列出过多的项目</li>
+<li>强调成果而非过程</li>
+<li>使用量化结果而非抽象描述</li>
+<li>强调影响力和复杂度</li>
+</ul>
+<h3 id="教育背景">教育背景</h3><ul>
+<li>不要写大学之前的教育经历</li>
+<li>不要写课程列表</li>
+<li>考虑使用成绩或排名</li>
+<li>考虑使用导师（老师）的评语</li>
+<li>考虑使用学业相关的奖项</li>
+</ul>
+<h3 id="个人爱好">个人爱好</h3><ul>
+<li>避免写个人爱好</li>
+</ul>
+<h3 id="英文简历">英文简历</h3><ul>
+<li>不要出现拼写错误</li>
+<li>不要使用全角字符</li>
+<li>使用正确的词汇</li>
+<li>使用简洁的句子</li>
+<li>避免中式英语</li>
+<li>使用一致的时态</li>
+<li>考虑提供缩写词的解释</li>
+<li>使用Bullets组织长段</li>
+<li>打下良好的英文基础</li>
+</ul>
+<h3 id="其它">其它</h3><ul>
+<li>考虑使用超链接</li>
+<li>考虑提供一个“加强版”简历</li>
+<li>考虑提供开发社区账号</li>
+<li>持续更新简历</li>
+<li>不断提升个人能力</li>
+<li>考虑征求他人意见</li>
+</ul>
+<p>简历编写工具推荐用 MarkDown，这才是技术简历！</p>
+<p>推荐文章<a href="http://get.jobdeer.com/744.get" target="_blank" rel="external">如何写好技术简历 —— 实例、模板及工具</a></p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-04-20T09:11:38.234Z"><a href="/2015/04/20/Javascript 继承两种形式/">2015-04-20</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2015/04/20/Javascript 继承两种形式/">前端开发经验总结－JavaScript 对象继承形式</a></h1>
   
 
     </header>
@@ -89,54 +228,11 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2015-04-18T02:43:31.953Z"><a href="/2015/04/18/前端开发经验总结－写样式的最佳实践/">2015-04-18</a></time>
+        <time datetime="2015-04-20T09:11:35.156Z"><a href="/2015/04/20/HTTP 常见状态码/">2015-04-20</a></time>
       
       
   
-    <h1 class="title"><a href="/2015/04/18/前端开发经验总结－写样式的最佳实践/">前端开发经验总结－写样式的最佳实践</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>前端开发经验总结系列之写样式的最佳实践</p>
-<ol>
-<li>坚持渐进增强策略，大胆使用新的 CSS3 技术，对低级浏览器保持基本的视觉支持。</li>
-<li>设计 Html 结构是开发样式模块的核心工作，不要为了视觉效果迁就 HTML 结构。</li>
-<li>使用 “fn-clear” 来清除浮动，慎用 “overflow: hidden;”。</li>
-<li>样式模块不要依赖 reset.css ，要有对自身的 reset 代码。</li>
-<li>不要去掉虚线框，为可用性考虑。</li>
-<li>放弃 IE6 下的透明 png 修补方案。</li>
-<li>使用 iconfont 代替雪碧图。</li>
-<li>待续…</li>
-</ol>
-
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-  <article class="post">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2015-04-18T02:43:11.390Z"><a href="/2015/04/18/前端开发经验总结－HTTP 常见状态码/">2015-04-18</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2015/04/18/前端开发经验总结－HTTP 常见状态码/">前端开发经验总结－HTTP 常见状态码</a></h1>
+    <h1 class="title"><a href="/2015/04/20/HTTP 常见状态码/">前端开发经验总结－HTTP 常见状态码</a></h1>
   
 
     </header>
@@ -192,54 +288,80 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2015-04-18T02:43:05.765Z"><a href="/2015/04/18/前端开发经验总结－网站性能优化/">2015-04-18</a></time>
+        <time datetime="2015-04-20T09:11:23.640Z"><a href="/2015/04/20/写样式的最佳实践/">2015-04-20</a></time>
       
       
   
-    <h1 class="title"><a href="/2015/04/18/前端开发经验总结－网站性能优化/">前端开发经验总结－网站性能优化</a></h1>
+    <h1 class="title"><a href="/2015/04/20/写样式的最佳实践/">前端开发经验总结－写样式的最佳实践</a></h1>
   
 
     </header>
     <div class="entry">
       
-        <p>前端开发经验总结系列之网站性能优化</p>
+        <p>前端开发经验总结系列之写样式的最佳实践</p>
 <ol>
-<li>减少HTTP请求次数</li>
+<li>坚持渐进增强策略，大胆使用新的 CSS3 技术，对低级浏览器保持基本的视觉支持。</li>
+<li>设计 Html 结构是开发样式模块的核心工作，不要为了视觉效果迁就 HTML 结构。</li>
+<li>使用 “fn-clear” 来清除浮动，慎用 “overflow: hidden;”。</li>
+<li>样式模块不要依赖 reset.css ，要有对自身的 reset 代码。</li>
+<li>不要去掉虚线框，为可用性考虑。</li>
+<li>放弃 IE6 下的透明 png 修补方案。</li>
+<li>使用 iconfont 代替雪碧图。</li>
+<li>待续…</li>
 </ol>
-<p>合并图片、CSS、JS，改进首次访问用户等待时间。</p>
-<ol>
-<li><p>把CSS放到顶部</p>
-</li>
-<li><p>把JS放到底部</p>
-</li>
-</ol>
-<p>防止js加载对之后资源造成阻塞。</p>
-<ol>
-<li><p>避免使用CSS表达式</p>
-</li>
-<li><p>将CSS和JS放到外部文件中</p>
-</li>
-</ol>
-<p>目的是缓存，但有时候为了减少请求，也会直接写到页面里，需根据PV和IP的比例权衡。</p>
-<ol>
-<li><p>精简CSS和JS</p>
-</li>
-<li><p>删除重复的JS和CSS</p>
-</li>
-</ol>
-<p>重复调用脚本，除了增加额外的HTTP请求外，多次运算也会浪费时间。在IE和Firefox中不管脚本是否可缓存，它们都存在重复运算JavaScript的问题。</p>
-<ol>
-<li>可缓存的AJAX</li>
-</ol>
-<p>“异步”并不意味着“即时”：Ajax并不能保证用户不会在等待异步的JavaScript和XML响应上花费时间。</p>
-<ol>
-<li>使用GET来完成AJAX请求</li>
-</ol>
-<p>当使用XMLHttpRequest时，浏览器中的POST方法是一个“两步走”的过程：首先发送文件头，然后才发送数据。因此使用GET获取数据时更加有意义。</p>
-<ol>
-<li>减少DOM元素数量</li>
-</ol>
-<p>是否存在一个是更贴切的标签可以使用？人生不仅仅是DIV+CSS</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-04-20T03:16:26.906Z"><a href="/2015/04/20/页面动态加入并执行 JavaScript 代码/">2015-04-20</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2015/04/20/页面动态加入并执行 JavaScript 代码/">页面动态加入并执行 JavaScript 代码</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>页面动态加入 script 标签并执行其代码</p>
+<p>在页面中动态追加HTML片段的时候，有时候动态添加的代码会含有script标签，比如用了一些模板引擎，或者你的代码有些复杂的时候。然而我们用DOM提供的innerHTML方式来添加代码的时候，script标签中的代码并不能执行，如果有src属性，指向的外联文件也不会被加载，这并不是浏览器的bug，因为W3C文档就是这么规定的。</p>
+<p>那我们有什么办法可以恢复追加的script标签的代码执行能力呢？</p>
+<h4 id="重新构造script标签">重新构造script标签</h4><p> 这个思路其实非常简单，用innerHTML添加的script无法执行，但是我们script创建节点，并用appendChild追加上去是可以的，所以我们只需要做一下二次工作就可以了，看下面的例子：</p>
+<p> 页面上有个容器：</p>
+ <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"cnt"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>JS代码如下：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> html = <span class="string">'&lt;div&gt;html&lt;/div&gt;&lt;script&gt;alert(1);&lt;\/script&gt;'</span>;</span><br><span class="line"><span class="keyword">var</span> cnt = <span class="built_in">document</span>.getElementById(<span class="string">'cnt'</span>);</span><br><span class="line">cnt.innerHTML = html;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> oldScript = cnt.getElementsByTagName(<span class="string">'script'</span>)[<span class="number">0</span>];</span><br><span class="line"><span class="keyword">if</span> (oldScript) &#123;</span><br><span class="line">  <span class="comment">// cnt.removeChild(oldScript);</span></span><br><span class="line">  <span class="keyword">var</span> newScript = <span class="built_in">document</span>.createElement(<span class="string">'script'</span>);</span><br><span class="line">  newScript.type = <span class="string">'text/javascript'</span>;</span><br><span class="line">  <span class="comment">// newScript.innerHTML = oldScript.innerHTML;</span></span><br><span class="line">  <span class="comment">// newScript.text = oldScript.text;</span></span><br><span class="line">  newScript.src = oldScript.src;</span><br><span class="line">  <span class="comment">// cnt.appendChild(newScript);</span></span><br><span class="line">  elem.replaceChild(script, oldScript);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这只是内联script的方法，如果是引用的外部js文件，那么我们需要为新创建的script节点指定src属性。</p>
+<h4 id="eval大法">eval大法</h4><p>虽然eval因为其安全性不推荐使用，但是在此特殊场景，使用eval确是非常简单的解决方案，就是把script标签中的代码eval一下手动执行，就ok了，看下面代码：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> html = <span class="string">'&lt;div&gt;html&lt;/div&gt;&lt;script&gt;alert(1);&lt;\/script&gt;'</span>;</span><br><span class="line"><span class="keyword">var</span> cnt = <span class="built_in">document</span>.getElementById(<span class="string">'cnt'</span>);</span><br><span class="line">cnt.innerHTML = html;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> oldScript = cnt.getElementsByTagName(<span class="string">'script'</span>)[<span class="number">0</span>];</span><br><span class="line"><span class="keyword">if</span> (oldScript) &#123;</span><br><span class="line">  cnt.removeChild(oldScript);</span><br><span class="line">  <span class="keyword">var</span> scriptText = oldScript.text;</span><br><span class="line">  <span class="built_in">eval</span>(scriptText);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>对于内联的代码，简单而有效，如果是外部js文件，那么还是使用上面的方法，为新创建的script节点指定src属性。</p>
+<h4 id="document-write大法">document.write大法</h4><p>此方法可以在页面上直接输出任何html内容，包含script标签的话会立即执行，所以也是一种方案，如下：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> html = <span class="string">'&lt;div&gt;html&lt;/div&gt;&lt;script&gt;alert(1);&lt;\/script&gt;'</span>;</span><br><span class="line"><span class="built_in">document</span>.write(html);</span><br></pre></td></tr></table></figure>
+<p>代码就直接执行了。但是他的缺点是如果代码写在文档底部，输出的内容会把页面上的其他内容全部覆盖，相当于清空了页面。解决的办法只有这样了：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"cont"</span>&gt;</span><span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span>&gt;</span><span class="javascript"><span class="built_in">document</span>.write(html);</span><span class="tag">&lt;/<span class="title">script</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>直接把它放在标签中，就会往这个标签中输出东西了。</p>
+<h4 id="使用jQuery">使用jQuery</h4><p>上面的方法说来说去，都不如jQuery简单，因为jQuery的html()，append()等方法内部已经做了处理，如果参数中含有script标签，内部会使用eval和创建新节点的方式进行处理，如果是外联的js文件，jQuery会发一个同步的ajax请求来获取代码，注意，是同步的！所以不论是内联的js代码还是外联的js文件，都可以正常执行，同时在执行完后删去script标签。所以，使用jQuery你只需要这样：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> html = <span class="string">'&lt;div&gt;html&lt;/div&gt;&lt;script&gt;alert(1);&lt;\/script&gt;'</span>;</span><br><span class="line"><span class="comment">// $('#cnt').append(html);</span></span><br><span class="line">$(<span class="string">'#cnt'</span>).html(html);</span><br></pre></td></tr></table></figure>
+<p>这个alert就妥妥的执行了。</p>
+<p>本文参考自<a href="http://www.cnblogs.com/lvdabao/p/4253704.html" target="_blank" rel="external">吕大豹（Double.Lv）</a>，感谢作者的无私分享！</p>
 
       
     </div>
@@ -277,13 +399,15 @@
   <h3 class="title">标签</h3>
   <ul class="entry">
   
-    <li><a href="/tags/HTTP-常见状态码/">HTTP 常见状态码</a><small>1</small></li>
+    <li><a href="/tags/CSS/">CSS</a><small>1</small></li>
   
-    <li><a href="/tags/写样式的最佳实践/">写样式的最佳实践</a><small>1</small></li>
+    <li><a href="/tags/HTTP/">HTTP</a><small>1</small></li>
   
-    <li><a href="/tags/前端开发经验总结-JavaScript-对象继承形式/">前端开发经验总结, JavaScript 对象继承形式</a><small>1</small></li>
+    <li><a href="/tags/JavaScript/">JavaScript</a><small>2</small></li>
   
-    <li><a href="/tags/网站性能优化/">网站性能优化</a><small>1</small></li>
+    <li><a href="/tags/简历之道/">简历之道</a><small>1</small></li>
+  
+    <li><a href="/tags/网站优化/">网站优化</a><small>1</small></li>
   
   </ul>
 </div>
