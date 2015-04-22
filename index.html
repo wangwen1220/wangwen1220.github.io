@@ -51,6 +51,103 @@
     <header>
       
         <div class="icon"></div>
+        <time datetime="2015-04-22T07:09:39.781Z"><a href="/2015/04/22/如何区分原生app和混合app/">2015-04-22</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2015/04/22/如何区分原生app和混合app/">如何区分Native App和Hybrid App</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>如何区分手机App是用Native实现还是用Webview实现</p>
+<p>在开发Android App时，特别是强内容展现型的功能，会想在原生Native实现和web实现中做选择，做这种选择的时候，难免想看看竞品或其它App类似功能是用哪种方式实现的。但是如何判断其它App是用原生控件实现还是用Webview载入网页来实现呢？其实要想做到这一点不难，至少有两种办法：</p>
+<h3 id="一、抓包">一、抓包</h3><p>这是比较原始，也是比较容易想到的，打开相应界面，抓取数据包看看，如果有url是返回比较完整的HTML代码，那基本就是Webview来实现的了。</p>
+<h3 id="二、利用系统开发人员工具">二、利用系统开发人员工具</h3><p>抓包的方法还是太麻烦，很多系统有更高级的开发人员工具功能，一般在设置里可以找到，有些手机可能需要特殊的操作才能打开开发人员工具功能。点击“设置”-&gt;“辅助功能”-&gt;“开发人员工具”，在绘图栏中找到“显示布局边界”并打开。这样所有应用的控件布局都一目了然了，Webview作为一个控件，只有一个边界框，所以通过这一点，就比较容易区分出一个界面是Webview实现的还是Native布局控件实现的，当然也不排除用一堆Webview来拼成一个界面的实现方法。</p>
+<p>除了上面两种方法，一般来说，通过断开网络，刷新界面，观察内容缓存情况也可以对实现方式有个大致预判断，一般来说缓存做得好的，都是原生控制实现的，有界面局部缓存的就更大可能是原生的了。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-04-22T06:55:32.500Z"><a href="/2015/04/22/HTTP 常见状态码/">2015-04-22</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2015/04/22/HTTP 常见状态码/">前端开发经验总结－HTTP 常见状态码</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>前端开发经验总结系列之 HTTP 常见状态码</p>
+<ul>
+<li>1xx: 信息</li>
+<li>2xx: 成功<ul>
+<li>200 OK 请求成功</li>
+<li>204    No Content 没有内容（没有response body，浏览器应该继续显示原来的文档）</li>
+<li>205 Reset Content    没有新文档（但浏览器应该重置它所显示的内容，用来强制浏览器清除表单输入内容）</li>
+</ul>
+</li>
+<li>3xx: 重定向<ul>
+<li>301 Moved Permanently 重定向（所请求的页面已经转移至新的url）</li>
+<li>302 Found 临时重定向（所请求的页面已经临时转移至新的url）</li>
+<li>304 Not Modified 文档未修改（客户的缓存资源是最新的， 要客户端使用缓存）</li>
+<li>307 Temporary Redirect 临时重定向（所请求的页面已经临时转移至新的url）</li>
+</ul>
+</li>
+<li>4xx: 客户端错误<ul>
+<li>400 Bad Request 坏请求（发送的Request中的数据有错误）</li>
+<li>403 Forbidden    请求被服务器拒绝了</li>
+<li>404 Not Found    未找到资源（服务器无法找到被请求的页面）</li>
+</ul>
+</li>
+<li>5xx: 服务器错误<ul>
+<li>500    Internal Server Error 内部服务器错误（服务器遇到一个错误，使其无法为请求提供服务）</li>
+<li>501 Internal Server Error 未实现（客户端发起的请求超出服务器的能力范围）</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
         <time datetime="2015-04-20T09:35:53.656Z"><a href="/2015/04/20/网站性能优化/">2015-04-20</a></time>
       
       
@@ -228,66 +325,6 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2015-04-20T09:11:35.156Z"><a href="/2015/04/20/HTTP 常见状态码/">2015-04-20</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2015/04/20/HTTP 常见状态码/">前端开发经验总结－HTTP 常见状态码</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>前端开发经验总结系列之 HTTP 常见状态码</p>
-<ul>
-<li>1xx: 信息</li>
-<li>2xx: 成功<ul>
-<li>200 OK 请求成功</li>
-<li>204    No Content 没有内容（没有response body，浏览器应该继续显示原来的文档）</li>
-<li>205 Reset Content    没有新文档（但浏览器应该重置它所显示的内容，用来强制浏览器清除表单输入内容）</li>
-</ul>
-</li>
-<li>3xx: 重定向<ul>
-<li>301 Moved Permanently 重定向（所请求的页面已经转移至新的url）</li>
-<li>302 Found 临时重定向（所请求的页面已经临时转移至新的url）</li>
-<li>304 Not Modified 文档未修改（客户的缓存资源是最新的， 要客户端使用缓存）</li>
-<li>307 Temporary Redirect 临时重定向（所请求的页面已经临时转移至新的url）</li>
-</ul>
-</li>
-<li>4xx: 客户端错误<ul>
-<li>400 Bad Request 坏请求（发送的Request中的数据有错误）</li>
-<li>403 Forbidden    请求被服务器拒绝了</li>
-<li>404 Not Found    未找到资源（服务器无法找到被请求的页面）</li>
-</ul>
-</li>
-<li>5xx: 服务器错误<ul>
-<li>500    Internal Server Error 内部服务器错误（服务器遇到一个错误，使其无法为请求提供服务）</li>
-<li>501 Internal Server Error 未实现（客户端发起的请求超出服务器的能力范围）</li>
-</ul>
-</li>
-</ul>
-
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-  <article class="post">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
         <time datetime="2015-04-20T09:11:23.640Z"><a href="/2015/04/20/写样式的最佳实践/">2015-04-20</a></time>
       
       
@@ -398,6 +435,8 @@
 <div class="widget tag">
   <h3 class="title">标签</h3>
   <ul class="entry">
+  
+    <li><a href="/tags/App/">App</a><small>1</small></li>
   
     <li><a href="/tags/CSS/">CSS</a><small>1</small></li>
   
